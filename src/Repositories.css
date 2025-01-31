@@ -1,0 +1,109 @@
+.repositories-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+}
+
+h2 {
+  color: white;
+}
+
+.sort-buttons {
+  margin-bottom: 20px;
+}
+
+.sort-buttons button {
+  background: #ff758c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.sort-buttons button:hover {
+  background: #ff5a7a;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+.repo-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.repo-card h3 {
+  color: #444;
+}
+
+.repo-card p {
+  color: #666;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background: #ff758c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.pagination button:disabled {
+  background: #ddd;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  color: white;
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .repositories-container {
+    padding: 15px;
+  }
+
+  .repo-card {
+    padding: 15px;
+  }
+
+  .pagination button {
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .repositories-container {
+    padding: 10px;
+  }
+
+  .repo-card {
+    padding: 10px;
+  }
+
+  .pagination button {
+    padding: 5px 10px;
+  }
+}
